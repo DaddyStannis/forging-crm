@@ -1,7 +1,8 @@
 {
-  "name": "salash-landing",
+  "name": "metal-casting",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -9,24 +10,29 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@emotion/react": "^11.13.0",
+    "@emotion/react": "^11.13.3",
     "@emotion/styled": "^11.13.0",
-    "@mikro-orm/core": "^6.3.1",
-    "@mikro-orm/mongodb": "^6.3.1",
-    "@mui/icons-material": "^5.16.5",
-    "@mui/material": "^5.16.5",
+    "@mikro-orm/core": "^6.3.6",
+    "@mikro-orm/mongo-highlighter": "^1.0.0",
+    "@mikro-orm/mongodb": "^6.3.6",
+    "@mikro-orm/reflection": "^6.3.6",
+    "@mui/icons-material": "^5.16.7",
+    "@mui/material": "^5.16.7",
     "dotenv-flow": "^4.1.0",
-    "mongoose": "^8.5.2",
-    "next": "14.2.4",
+    "next": "14.2.5",
     "react": "^18",
     "react-dom": "^18"
   },
   "devDependencies": {
-    "@types/node": "^20",
+    "@mikro-orm/cli": "^6.3.6",
+    "@types/dotenv-flow": "^3.3.3",
+    "@types/node": "^20.16.1",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "eslint": "^8",
-    "eslint-config-next": "14.2.4",
-    "typescript": "^5"
+    "eslint-config-next": "14.2.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4",
+    "vitest": "^2.0.5"
   }
 }
