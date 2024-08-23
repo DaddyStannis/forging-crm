@@ -4,7 +4,7 @@ import { MikroORM } from "@mikro-orm/core";
 import { defineConfig } from "@mikro-orm/mongodb";
 import { MongoHighlighter } from "@mikro-orm/mongo-highlighter";
 
-import { Client, Product, Order } from "../entities";
+import { Client, Product, Order } from "../domain";
 import { Address, OrderLine } from "@/valueObjects";
 
 declare global {

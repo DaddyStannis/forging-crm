@@ -1,5 +1,5 @@
 import { EntitySchema } from "@mikro-orm/mongodb";
-import { Client, Order, Product } from "@/entities";
+import { Client, Order, Product } from "@/domain";
 import { Address, OrderLine } from "@/valueObjects";
 
 export const OrderLineSchema = new EntitySchema<OrderLine>({
