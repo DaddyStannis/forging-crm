@@ -1,0 +1,37 @@
+.form {
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+  min-width: 28.4375rem;
+  margin: 0;
+  padding: 0;
+}
+
+.button {
+  position: absolute;
+  top: 50%;
+  right: 0.75rem;
+  transform: translate(0, -50%);
+  border: none;
+  border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    outline: 1px solid transparent;
+    transition: outline 300ms;
+  }
+  &:hover {
+    &::after {
+      outline-color: var(--color-divider);
+    }
+  }
+}

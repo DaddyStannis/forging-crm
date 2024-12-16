@@ -1,0 +1,46 @@
+.sidebar {
+  width: 16.67%;
+  min-width: fit-content;
+  max-width: 15em;
+  height: 100vh;
+  padding: 2em 0 1.5em;
+  background-color: var(--color-primary);
+}
+
+.navItem {
+  position: relative;
+  & + & {
+    margin-top: 28px;
+  }
+}
+
+.navLink {
+  padding: 0.3751em 1.5em;
+  color: var(--color-contrast);
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+  gap: 0.875em;
+  background-color: var(--color-primary);
+  transition: background-color 400ms;
+
+  & > svg * {
+    stroke: currentColor;
+    width: 1.125rem;
+    height: 1.125rem;
+  }
+
+  &:global(.active) {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 0.25em;
+      width: 0.25em;
+      height: 100%;
+      background-color: var(--color-secondary);
+      border-radius: 0.125em;
+      transform: translate(0, -50%);
+    }
+  }
+}

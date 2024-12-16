@@ -1,0 +1,39 @@
+.button {
+  padding: 0.625rem 1.25rem;
+  background-color: var(--color-primary);
+  color: var(--color-contrast);
+  border-radius: 0.25em;
+  font-weight: 500;
+  cursor: pointer;
+  line-height: 1.5em;
+  user-select: none;
+
+  &:global(.outlined) {
+    background-color: transparent;
+    color: var(--color-primary);
+    &:hover {
+      background: var(--color-secondary-hover)
+        radial-gradient(circle, transparent 1%, var(--color-secondary-hover) 1%)
+        center/15000%;
+    }
+    &:active {
+      background-color: var(--color-secondary-active);
+      background-size: 100%;
+      transition: background 0s;
+    }
+  }
+
+  /* Ripple effect */
+  background-position: center;
+  transition: background 0.8s;
+  &:hover {
+    background: var(--color-primary-hover)
+      radial-gradient(circle, transparent 1%, var(--color-primary-hover) 1%)
+      center/15000%;
+  }
+  &:active {
+    background-color: var(--color-primary-active);
+    background-size: 100%;
+    transition: background 0s;
+  }
+}
