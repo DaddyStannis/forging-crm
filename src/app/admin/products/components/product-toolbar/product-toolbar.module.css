@@ -1,0 +1,13 @@
+.toolbar {
+  padding: 2rem 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 1rem;
+}

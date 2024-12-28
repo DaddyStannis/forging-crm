@@ -29,7 +29,8 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "mikro-orm.config.ts"
+    "mikro-orm.config.ts",
+    "src/script.tsч"
   ],
   "exclude": ["node_modules"]
 }
